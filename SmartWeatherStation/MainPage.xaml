@@ -1,0 +1,33 @@
+﻿<Page
+    x:Class="SmartWeatherStation.MainPage"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:local="using:SmartWeatherStation"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    mc:Ignorable="d">
+
+    <Grid Background="{ThemeResource ApplicationPageBackgroundThemeBrush}">
+        <TextBlock Text="RasberryPi Smart Weather Station (Powered by Windows IoT Core)" HorizontalAlignment="Left" Height="201" Margin="20,31,0,0"  TextWrapping="Wrap" VerticalAlignment="Top" Width="1880" FontSize="72" />
+        <TextBlock HorizontalAlignment="Left" Margin="90,255,0,0" Text="Temperature (ºC)" TextWrapping="Wrap" VerticalAlignment="Top" Height="160" Width="363" FontSize="36"/>
+        <TextBlock HorizontalAlignment="Left" Margin="89,476,0,0" Text="Pressure (hPa)" TextWrapping="Wrap" VerticalAlignment="Top" Height="144" Width="379" FontSize="36"/>
+        <TextBlock HorizontalAlignment="Left" Margin="89,727,0,0" Text="Humidity (%)" TextWrapping="Wrap" VerticalAlignment="Top" Height="144" Width="379" FontSize="36"/>
+        <TextBox x:Name="txtHumidity" HorizontalAlignment="Left" Margin="509,700,0,0" Text="" VerticalAlignment="Top" FontSize="72" RenderTransformOrigin="-0.071,0.167" Width="373" Background="#66105691" Height="160" IsReadOnly="True"/>
+        <TextBox x:Name="txtPressure" HorizontalAlignment="Left" Margin="509,460,0,0" Text="" VerticalAlignment="Top" FontSize="72" RenderTransformOrigin="-0.071,0.167" Width="373" Background="#660874B2" Height="160" IsReadOnly="True"/>
+        <TextBox x:Name="txtTemperature" HorizontalAlignment="Left" Margin="509,247,0,0" Text="" VerticalAlignment="Top" FontSize="72" RenderTransformOrigin="-0.071,0.167" Width="373" Background="#662789C1" Height="160" IsReadOnly="True"/>
+        <TextBlock HorizontalAlignment="Left" Margin="999,350,0,0" Text="Real Feal" TextWrapping="Wrap" VerticalAlignment="Top" Height="91" Width="406" FontSize="36"/>
+        <TextBlock HorizontalAlignment="Left" Margin="999,517,0,0" Text="Height Above Sea Level (m)" TextWrapping="Wrap" VerticalAlignment="Top" Height="90" Width="406" FontSize="36"/>
+        <TextBlock HorizontalAlignment="Left" Margin="999,238,0,0" Text="Weather Forcast" TextWrapping="Wrap" VerticalAlignment="Top" Height="91" Width="406" FontSize="36"/>
+        <TextBox x:Name="txtHeightAboveSea" HorizontalAlignment="Left" Margin="1444,516,0,0" Text="" VerticalAlignment="Top" FontSize="36" RenderTransformOrigin="-0.071,0.167" Width="418" Background="#6649E21C" Height="91" IsReadOnly="True"/>
+        <TextBox x:Name="txtRealFeel" HorizontalAlignment="Left" Margin="1444,353,0,0" Text="" VerticalAlignment="Top" FontSize="36" RenderTransformOrigin="-0.071,0.167" Width="418" Background="#6673C70F" Height="91" IsReadOnly="True"/>
+        <TextBox x:Name="txtWeatherForcast" HorizontalAlignment="Left" Margin="1444,241,0,0" Text="" VerticalAlignment="Top" FontSize="36" RenderTransformOrigin="-0.071,0.167" Width="418" Background="#6660E422" Height="90" IsReadOnly="True"/>
+        <Button x:Name="cmdCloud" Content="Cloud Upload" HorizontalAlignment="Left" Height="93" Margin="342,947,0,0" VerticalAlignment="Top" Width="291" FontSize="36" Click="cmdCloud_Click"/>
+        <Button x:Name="cmdReset" Content="Reset" HorizontalAlignment="Left" Height="93" Margin="664,947,0,0" VerticalAlignment="Top" Width="291" FontSize="36" Click="cmdReset_Click"/>
+        <Button x:Name="cmdStartAcq" Content="Start Acquisition" HorizontalAlignment="Left" Height="93" Margin="25,833,0,0" VerticalAlignment="Top" Width="291" FontSize="36" Click="cmdStartAcq_Click"/>
+        <Button x:Name="cmdStopAcq" Content="Stop Acquisition" HorizontalAlignment="Left" Height="93" Margin="25,945,0,0" VerticalAlignment="Top" Width="291" FontSize="36" Click="cmdStopAcq_Click"/>
+        <TextBlock HorizontalAlignment="Left" Margin="1005,964,0,0" Text="Designed and developed by Faizansoft AIMs Research (C) 2018" TextWrapping="Wrap" VerticalAlignment="Top" FontSize="36" FontWeight="Normal" Foreground="#FF091D99"/>
+
+
+
+    </Grid>
+</Page>
